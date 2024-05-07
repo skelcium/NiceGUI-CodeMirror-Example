@@ -14,7 +14,7 @@ def run_code():
         output = redirected_output.getvalue()
 
         if output:
-            ui.notify(redirected_output.getvalue(), color='primary')
+            ui.notify(output, color='primary')
 
     except Exception as e:
         ui.notify(e, color='negative')
